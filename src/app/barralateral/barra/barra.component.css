@@ -1,0 +1,17 @@
+.barra{
+    display: grid;
+    background-color: rgb(8, 1, 37);
+    color: rgb(200, 194, 194);
+    text-align: justify;
+    padding: 5px;
+}
+
+.barra h2{
+color: yellow;
+}
+
+.barra h3{
+    color: white;
+}
+
+

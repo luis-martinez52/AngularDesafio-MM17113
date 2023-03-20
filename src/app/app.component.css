@@ -1,0 +1,51 @@
+*{
+    /* background-color: white; */
+    /* border: 1px solid red; */
+}
+
+.contenedor{
+    margin: 10px;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template: 
+    "encabezado encabezado" 50px
+    "cuerpo barra" auto
+    "pie pie" 50px / 
+    auto 300px;
+}
+
+.encabezado{
+    height: 50px;
+    background-color: aqua;
+    grid-area: encabezado;
+}
+
+.cuerpo{
+    /* height: auto; */
+    grid-area: cuerpo;
+}
+.barra{
+    
+   grid-area: barra;
+   
+}
+
+.pie{
+    height: 150px;
+    background-color: blueviolet;
+    grid-area: pie;
+    
+}
+
+@media(max-width:572px){
+    .contenedor{
+        margin: 10px;
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template: 
+        "encabezado" 
+        "cuerpo" 
+        "barra"
+        "pie";
+    }
+}

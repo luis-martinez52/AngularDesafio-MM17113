@@ -1,0 +1,33 @@
+.encabezado{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+}
+
+.menu ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 0.5em;
+}
+.menu ul li{
+        
+    display: block;
+    color: rgb(92, 89, 89);
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+   
+}
+.icono-menu{
+    display: none;
+}
+
+@media(max-width:572px){
+    .icono-menu{
+        display: block;
+        text-align: right;
+    } 
+    .menu{
+        display: none;
+    }
+}

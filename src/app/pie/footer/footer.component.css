@@ -1,0 +1,33 @@
+.pie{
+    padding-top: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.pie-contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.pie-contenido img{
+    height: 200px;
+}
+
+.pie-detalle h1{
+    color: gray;
+}
+
+.pie-detalle p{
+    color: rgb(193, 196, 198);
+}
+
+@media(max-width:572px){
+    .pie{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    } 
+}
